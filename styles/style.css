@@ -1,0 +1,287 @@
+* {
+    font-family: Arial;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(160deg, #444444, #0c0c0c);
+    margin: 0px;
+}
+
+.body-home {
+    background-image: url("../images/outdoors1-bw.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.body-pagenotfound {
+    background-image: url("../images/kira-bw.jpg");
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 17px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 11px;
+    vertical-align: sub;
+}
+
+p.instructor-text {
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: .2;
+}
+
+
+p.instructor-quote {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+section {
+    padding: 0rem 5rem;
+}
+
+.pagenotfound {
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+} 
+
+header {
+    background-color: #03a3df;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: end;
+    padding-right: 7rem;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav ul li:not(:last-child):after {
+    content: "|";
+    position: relative;
+    left: -10px;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0px;
+}
+
+.header-logo {
+    width: 235px;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 2rem 7rem;
+}
+
+.grid-instructors {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+    padding: 2rem 7rem;
+}
+
+.instructor-hr {
+    border: 7px solid #03a3df;
+    border-radius: 2px;
+}
+
+.instructor-hr-small {
+    border: .5px solid #03a3df;
+}
+
+.grid-logo1 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+div .grid-logo1 {
+    text-align: right;
+}
+
+.grid-address {
+    grid-area: 1 / 4 / 2 / 7;
+}
+
+div .grid-address {
+    color: white;
+}
+
+.grid-nav {
+    grid-area: 1 / 7 / 2 / 13;
+}
+
+.grid-button {
+    grid-area: 1 / 6 / 2 / 8;
+}
+
+.grid-service1 {
+    grid-area: 3 / 1 / 5 / 5;
+}
+
+.grid-service2 {
+    grid-area: 3 / 5 / 5 / 9;
+}
+
+.grid-service3 {
+    grid-area: 3 / 9 / 5 / 13;
+}
+
+.grid-quote {
+    grid-area: 6 / 3 / 7 / 11;
+}
+
+.instructor-box1 {
+    grid-area: 3 / 1 / 4 / 4
+}
+
+div .instructor-box1 {
+    padding: 0rem 2rem;
+}
+
+.instructor-box2 {
+    grid-area: 3 / 4 / 4 / 7
+}
+
+div .instructor-box2 {
+    padding: 0rem 2rem;
+}
+
+.instructor-box3 {
+    grid-area: 3 / 7 / 4 / 10
+}
+
+div .instructor-box3 {
+    padding: 0rem 2rem;
+}
+
+.instructor-box4 {
+    grid-area: 3 / 10 / 4 / 13
+}
+
+div .instructor-box4 {
+    padding: 0rem 2rem;
+}
+
+div .grid-button  {
+    text-align: center;
+    background-color: #ecb722;
+    border-radius: 5px;
+}
+
+div .grid-service1 {
+    padding: 0rem 2rem;
+    background-color: #0c0c0c99;
+}
+
+div .grid-service2 {
+    padding: 0rem 2rem;
+    background-color: #0c0c0c99;
+}
+
+div .grid-service3 {
+    padding: 0rem 2rem;
+    background-color: #0c0c0c99;
+}
+
+.service-heading {
+    text-align: center;
+}
+
+.quote-font {
+    text-align: center;
+    font-size: 32px !important;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-container {
+    margin: 2rem 10rem;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
+footer {
+    background-image: url("../images/footerImage.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: auto;
+    font-size: 12px;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0px;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+footer ul li:not(:last-child):after {
+    content: "/";
+    position: relative;
+    left: -10px;
+}
