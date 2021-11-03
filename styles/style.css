@@ -285,3 +285,9 @@ footer ul li:not(:last-child):after {
     position: relative;
     left: -10px;
 }
+
+.videos {
+    text-align: center;
+    margin: auto 0px;
+    display: block;
+}
