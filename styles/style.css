@@ -25,7 +25,26 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
+}
+
+.hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+    background-color: #1D819A;
+}
+
+.hidden:focus {
+    left: 0;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 h1 {
@@ -92,12 +111,15 @@ nav ul li a {
     color: white;
     font-weight: bold;
     margin-right: 20px;
+    padding: .5rem;
+    margin: .5rem;
 }
 
 nav ul li:not(:last-child):after {
     content: "|";
     position: relative;
-    left: -10px;
+    padding: .5rem;
+    margin: .5rem;
 }
 
 .grid-header {
@@ -160,14 +182,20 @@ div .grid-address {
 
 .grid-service1 {
     grid-area: 3 / 1 / 5 / 5;
+    padding: 0rem 2rem;
+    background-color: #1d1d1d;
 }
 
 .grid-service2 {
     grid-area: 3 / 5 / 5 / 9;
+    padding: 0rem 2rem;
+    background-color: #1d1d1d;
 }
 
 .grid-service3 {
     grid-area: 3 / 9 / 5 / 13;
+    padding: 0rem 2rem;
+    background-color: #1d1d1d;
 }
 
 .grid-quote {
@@ -210,21 +238,6 @@ div .grid-button  {
     text-align: center;
     background-color: #ecb722;
     border-radius: 5px;
-}
-
-div .grid-service1 {
-    padding: 0rem 2rem;
-    background-color: #0c0c0c99;
-}
-
-div .grid-service2 {
-    padding: 0rem 2rem;
-    background-color: #0c0c0c99;
-}
-
-div .grid-service3 {
-    padding: 0rem 2rem;
-    background-color: #0c0c0c99;
 }
 
 .service-heading {
